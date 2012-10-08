@@ -54,7 +54,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 987648000
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 # Inline kernel building config
-TARGET_KERNEL_CONFIG := omap3621_fattire-ics_defconfig
+#TARGET_KERNEL_CONFIG := omap3621_fattire-ics_defconfig
 BOARD_USES_UBOOT := true
 
 # Fallback prebuilt kernel
@@ -152,3 +152,4 @@ TW_INTERNAL_STORAGE_MOUNT_POINT := "emmc"
 TW_EXTERNAL_STORAGE_PATH := "/sdcard"
 TW_EXTERNAL_STORAGE_MOUNT_POINT := "sdcard"
 TW_DEFAULT_EXTERNAL_STORAGE := true
+TARGET_RECOVERY_INITRC := device/bn/encore/recovery/init.twrp.rc
